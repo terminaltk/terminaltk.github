@@ -109,7 +109,7 @@ html, body, .wrapper{
 }
 @media only screen and (max-width: 768px){
   .map-img{
-    background: url(../img/map_mobile.jpg)right no-repeat;
+    background: url(../img/map_mobile.jpeg)right no-repeat;
   }
   .map-img p{
     max-width: 150px;
