@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+html,body {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.header {
+  background: url(../img/header.jpg)center no-repeat;
+  background-size: cover;
+  position: static;
+}
+.page-caption {
+  padding-top: 170px;
+  padding-bottom: 174px;
+}
+.page-title {
+  font-size: 46px;
+  line-height: 1;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.page-title h1{
+  padding-top:20px ;
+}
+.navbar-custom {
+  padding-top: 25px;
+  background: transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open > a {
+  text-decoration: underline;
+  background: transparent;
+  color: #ffffff;
+}
+.navbar-custom .navbar-toggle {
+  background: transparent;
+}
+.navbar-custom .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+  font-size: 40px;
+}
+.navbar-custom li > a {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper nav .navbar-collapse{
+    position: absolute;
+    width: 100%;
+    border: 0px;
+  }
+  .navbar-custom ul li a, .in ul li a {
+    color: #fff !important;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-custom ul li a:hover, .in ul li a:hover {
+    color: #fff!important;
+  }
+}
+
+.card-block{
+  position: relative;
+  background: #ffffff;
+  bottom: -50px;
+}
+.card-block h4{
+  text-align: center;
+  padding: 10px;
+}
+html, body, .wrapper{
+  position: relative;
+  height: 100%;
+}
+.info{
+  margin-top: 50px;
+}
+.card, .first-card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display:table;
+}
+@media only screen and (max-width:768px) {
+  .card .img{
+    display:table-header-group;
+  }
+  .card .text{
+    display:table-footer-group;
+  }
+}
+.map-img{
+  background: url(../img/map.jpg)right no-repeat;
+  width: 100%;
+  height: 300px;
+}
+.map-img p{
+  color: white;
+  text-align: left;
+  max-width: 500px;
+  height: 300px;
+  padding: 5px;
+  overflow-y: scroll;
+}
+@media only screen and (max-width: 768px){
+  .map-img{
+    background: url(../img/map_mobile.jpg)right no-repeat;
+  }
+  .map-img p{
+    max-width: 150px;
+  }
+}
+.brand h1{
+  text-align: center;
+}
+.brand ul{
+  white-space: nowrap;
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+}
+.brand li{
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 5px;
+}
+img.center {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+#map{
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+footer{
+}
+.contact{
+  background: #3B3B3B;
+  color: white;
+  text-align: center;
+}
+.email-form textarea,.email-form button{
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  align-items: center;
+}
