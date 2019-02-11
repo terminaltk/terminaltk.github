@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 html,body {
   font-family: 'Open Sans Condensed', sans-serif;
+  scroll-behavior:smooth;
 }
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+}
+
 .header {
   background: url(../img/header.jpg)center no-repeat;
   background-size: cover;
@@ -34,6 +50,15 @@ html,body {
   text-decoration: underline;
   background: transparent;
   color: #ffffff;
+}
+@media only screen and (max-width: 768px){
+  .navbar-custom .navbar-nav > li > a:hover,
+  .navbar-custom .navbar-nav > li > a:focus,
+  .navbar-custom .navbar-nav > .active > a:hover,
+  .navbar-custom .navbar-nav > .active > a:focus,
+  .navbar-custom .navbar-nav > .open > a {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
 .navbar-custom .navbar-toggle {
   background: transparent;

@@ -6,15 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
     new WOW().init();
+
+    window.onscroll = function() {
+      scrollFunction()
+    };
+    function scrollFunction() {
+      if ((this.oldScroll > this.scrollY)&&document.documentElement.scrollTop>100) {
+        document.getElementById("myBtn").style.display = "block";
+      }else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+      this.oldScroll = this.scrollY;
+    }
+
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
   </script>
   <title>Добро пожаловать!</title>
 </head>
 <body>
   <div class="wrapper">
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <div class="header">
     <div class="container">
       <nav class="navbar navbar-custom container">
@@ -29,10 +48,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Для арендаторов</a></li>
+            <li><a href="#first-card">О нас</a></li>
+            <li><a href="#map">Для арендаторов</a></li>
             <li><a href="#">Для инвесторов</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#contact">Контакты</a></li>
          </ul>
         </div>
       </nav>
@@ -50,7 +69,7 @@
   </div>
 
   <div class="info container">
-    <div class="first-card wow fadeInUp animated">
+    <div class="first-card wow fadeInUp animated" id="first-card">
       <div class="col-md-6">
         <p class="center">Группа компаний «Терминал» успешно ведет свою деятельность на рынке Российской Федерации
         более 10 лет.Имеет свои традиции и опыт. Политика работы следует принципам надежности,
@@ -192,11 +211,11 @@
   </div>
 
   <footer>
-    <div class="contact">
+    <div class="contact" id="contact">
       <h1 style="margin:0;">Свяжитесь с нами</h1>
       <p>Мы находимся на территории торгового комплекса "Терминал" по адресу:
-        <br>г. Чебоксары, Канашское шоссе, 7/1. <br>Телефоны: +7-953-015-99-51 / (8352) 60-66-80<br>
-        e-mail: TERMINALS21@YA.RU</p>
+        <br>г. Чебоксары, Канашское шоссе, 7/1. <br>Телефоны: <a href="tel:+79053460967">+7-905-346-09-67</a> / <a href="+79196533090">+7-919-653-30-90</a><br>
+        e-mail: nikit1976@mail.ru</p>
         <form class="email-form" method="POST" action="https://formspree.io/nikit1976@mail.ru">
           <textarea name="message" style="color: black;" placeholder="Сообщение"></textarea>
           <button type="submit" style="color: black;">Отправить</button>
